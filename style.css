@@ -1,0 +1,351 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.head,
+.hand,
+.neck,
+.body,
+.stomach,
+.chest,
+.hips,
+.leg,
+.eye,
+.hand__section__top,
+.hand__section__bottom,
+.leg__section__top,
+.leg__section__bottom,
+.elbow,
+.knee{
+    display: block;
+    border: 2px solid black;
+    height: 110px;
+    width: 110px;
+    border-radius: 15px/15px;
+}
+
+.head,
+.neck{
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.head{
+    margin-top: 10px;
+    position: relative;
+    left: 40px;
+}
+
+.head,
+.eye,
+.elbow,
+.knee{
+    border-radius: 50%;
+}
+
+.eye{
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    margin-left: 15px;
+    margin-top: 25px;
+    background-color: white;
+}
+
+.neck{
+    position: relative;
+    width: 20px;
+    height: 50px;
+    border-top:none ;
+    left: 40px;
+    border-radius: 0;
+}
+
+.body__container,
+.leg__container{
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+   width: 170px;
+/*    justify-content: space-between;
+ *//*     justify-content: center;  */
+}
+
+.leg__container{
+    top: -70px;
+    left: -20px;
+    width: 120px;
+}
+.knee,
+.elbow{
+    width: 50px;
+    height: 50px;
+}
+
+.hand{
+    margin: 0 30px;
+    position: absolute;
+    height: 350px;
+    width: 50px;
+    transform-origin: top;
+    border: none;
+}
+
+.left .knee,
+.left .elbow,
+.left .leg__section__top,
+.left .leg__section__bottom,
+.left .hand__section__top,
+.left .hand__section__bottom{
+    background-color: rgba(0,0,0,0.8);
+ 
+}
+
+.right .knee,
+.right .elbow,
+.right .leg__section__top,
+.right .leg__section__bottom,
+.right .hand__section__top,
+.right .hand__section__bottom{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.leg__section__bottom{
+  /*   transform-origin: top; */
+    transform: rotate(25deg) translateX(-55px);
+}
+
+.hand__section__top{
+  /*   transform-origin: top; */
+    transform: /* rotate(-25deg) */ translateX(-15px);
+}
+
+.hand__section__top{
+    width: 40px;
+    height: 150px;
+}
+.leg__section__top{
+    width: 55px;
+    height: 200px;
+}
+
+.hand__section__bottom{
+    width: 40px;
+    height: 160px;
+    transform-origin: top;
+}
+
+.leg__section__bottom{
+    width: 50px;
+    height: 250px;
+    transform-origin: top;
+}
+
+.body{
+    position: relative;
+    height: 330px;
+    width: 140px;
+    margin:0 50px;
+    z-index: 50;
+  border: none;
+   
+}
+
+.stomach,
+.hips,
+.chest{
+    height: 80px;
+    width: 120px;
+    margin:0 auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.stomach{
+    height: 130px;
+    width: 60px;
+    margin-right: 100px;
+}
+
+.hips{
+    height: 70px;
+    width: 100px;
+    margin-right: 40px;
+}
+
+.right{ 
+    animation-name: right;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    z-index: 10;
+}
+
+@keyframes right{
+    0%{
+        transform:translateX(20px) rotate(0);
+    }
+    25%{
+        transform:translateX(35px) rotate(65deg);
+    }
+    50%{
+        transform:translateX(20px) rotate(0);
+    }
+    75%{
+        transform:translateX(35px) rotate(-65deg);
+    }
+    100%{
+        transform:translateX(20px) rotate(0);
+    }
+}
+
+.left{
+    animation-name: left;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    z-index: 100;
+}
+
+@keyframes left{
+    0%{
+        transform:translateX(0) rotate(0);
+    }
+    25%{
+        transform:translateX(-15px) rotate(-65deg);
+    }
+    50%{
+        transform:translateX(0) rotate(0);
+    }
+    75%{
+        transform:translateX(-15px) rotate(65deg);
+    }
+    100%{
+        transform:translateX(0) rotate(0);
+    }
+}
+
+.leg{
+    transform-origin: top;
+    animation-direction: reverse;
+
+    width: 70px;
+    border: none;
+}
+
+.hips__move{
+    animation-name: hips;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hips{
+    0%{
+        transform:translateX(-10px) rotate(0);
+    }
+    25%{
+        transform:translateX(-35px) rotate(15deg);
+    }
+    50%{
+        transform:translateX(-20px) rotate(0);
+    }
+    75%{
+        transform:translateX(-35px) rotate(-15deg);
+    }
+    100%{
+        transform:translateX(-10px) rotate(0);
+    }
+}
+
+.chest__move{
+    animation-name: chest;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes chest{
+    0%{
+        transform:translateX(-30px) rotate(0);
+    }
+    25%{
+        transform:translateX(-35px) rotate(-15deg);
+    }
+    50%{
+        transform:translateX(-40px) rotate(0);
+    }
+    75%{
+        transform:translateX(-35px) rotate(15deg);
+    }
+    100%{
+        transform:translateX(-30px) rotate(0);
+    }
+}
+
+.hand__skew{ 
+    animation-name: hand__skew;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    z-index: 10;
+}
+
+@keyframes hand__skew{
+    0%{
+        transform:translateX(10px) rotate(0);
+    }
+    25%{
+        transform:translateX(15px) rotate(-35deg);
+    }
+    50%{
+        transform:translateX(20px) rotate(-55deg);
+    }
+    75%{
+        transform:translateX(15px) rotate(-35deg);
+    }
+    100%{
+        transform:translateX(10px) rotate(0);
+    }
+}
+
+.leg__skew{ 
+    animation-name: leg__skew;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    z-index: 10;
+}
+
+@keyframes leg__skew{
+    0%{
+        transform:translateX(-10px) rotate(0);
+    }
+    25%{
+        transform:translateX(-15px) rotate(35deg);
+    }
+    50%{
+        transform:translateX(-20px) rotate(55deg);
+    }
+    75%{
+        transform:translateX(-15px) rotate(35deg);
+    }
+    100%{
+        transform:translateX(-10px) rotate(0);
+    }
+}
+
+
+
+/* .hand .right{
+    left: 100px;
+}
+.hand .left{
+    left: -100px;
+} */
