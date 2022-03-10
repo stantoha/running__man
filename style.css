@@ -5,6 +5,25 @@ body{
     background-color: rgba(0,0,0,0.1);
 }
 
+.wrapper{
+    display: block;
+    margin: 400px auto;
+}
+
+.crowd{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+/* li:nth-child(even).human{
+    margin-top: 200px;
+} */
+
+.stick,
+.flag,
+.blue,
+.yellow,
 .mouth,
 .wirst,
 .foot,
@@ -40,7 +59,7 @@ body{
 }
 
 .head{
-    margin-top: 10px;
+/*     margin-top: 10px; */
     position: relative;
     left: 40px;
 }
@@ -66,8 +85,6 @@ body{
     position: absolute;
     width: 20px;
     height: 10px;
-    /* left: 70px; */
-   /*  animation-direction: reverse; */
 }
 
 .neck{
@@ -86,8 +103,6 @@ body{
     margin: 0 auto;
     justify-content: space-between;
    width: 150px;
-/*    justify-content: space-between;
- *//*     justify-content: center;  */
 }
 
 .leg__container{
@@ -121,7 +136,6 @@ body{
 .left .hand__section__top,
 .left .hand__section__bottom{
     background-color: rgba(0,0,0,0.9);
-
    }
 
 .right .wirst,
@@ -145,10 +159,8 @@ body{
     z-index: 80;
 }
 .hand__section__top{
-  /*   transform-origin: top; */
-    transform: /* rotate(-25deg) */ translateX(-15px);
+    transform: translateX(-15px);
 }
-
 
 .hand__section__top{
     width: 40px;
@@ -162,18 +174,13 @@ body{
     justify-content: flex-end;
     width: 55px;
     height: 200px;
-  
 }
-
 
 .hand__section__bottom{
     width: 40px;
     height: 160px;
     transform-origin: top;
 }
-
-
-
 
 .body{
     position: relative;
@@ -182,9 +189,7 @@ body{
     margin:0 50px;
     z-index: 50;
   border: none;
-   
 }
-
 
 .stomach,
 .hips,
@@ -192,11 +197,10 @@ body{
     height: 80px;
     width: 120px;
     margin:0 auto;
- 
    }
 
    .chest{
-    background-color: rgba(90, 190, 236, 0.9);
+    background-color: rgba(90, 190, 236, 1);
     box-shadow: -30px 0 0 rgba(0,0,0,1);
    }
 
@@ -204,7 +208,7 @@ body{
     height: 130px;
     width: 60px;
     margin-right: 100px;
-    background-color: rgba(227, 236, 90, 0.9);
+    background-color: rgba(227, 236, 90, 1);
     box-shadow: -30px 0 10px rgba(0,0,0,1);
 }
 
@@ -221,7 +225,7 @@ body{
     animation-duration: 1.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-   /*  animation-fill-mode: backwards; */
+   
     z-index: 10;
 }
 
@@ -248,7 +252,6 @@ body{
     animation-duration: 1.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-/*     animation-fill-mode: backwards; */
     z-index: 80;
 }
 
@@ -291,42 +294,69 @@ body{
     height: 20px;
     transform: rotate(-5deg);
 }
-
+.stick,
 .wirst{
     width: 30px;
     height: 80px;
     position: absolute;
     top:160px ;
-    left:0 ;
-    transform: rotate(10deg);
+    left:0   ;
+    transform-origin: top;
+    transform:translate(20px,0) rotate(10deg);
 }
 
-/* .foot{ 
-    animation-name: foot;
-    animation-duration: 1.5s;
+.stick{
+    width: 1000px;
+    height: 5px;
+    top:-200px ;
+    left: -300px;
+    background-color: rgba(0,0,0,0.8);
+    transform: rotate(-250deg);
+}
+
+.flag{
+    transform-origin: bottom;
+    height: 250px;
+    width: 200px;
+    position: relative;
+    animation-name: flag;
+    animation-duration: 5s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-fill-mode: backwards;
-    z-index: 10;
+    animation-iteration-count: infinite;  
+    border-radius: 0;
 }
 
-@keyframes foot{
-    0%{
-        transform:translateX(-20px);
-    }
-    25%{
-        transform:translateX(-35px);
+@keyframes flag{
+    from{
+        transform: skew(5deg);
+        height: 80%;
     }
     50%{
-        transform:translateX(-20px);
+        transform: skew(-5deg);
+        height: 100%;
     }
-    75%{
-        transform:translateX(-35px);
+    to{
+        transform: skew(5deg);
+        height: 80%;
     }
-    100%{
-        transform:translateX(-20px);
-    }
-} */
+}
+
+.blue,
+.yellow{
+    position: absolute;
+    transform-origin: bottom;
+    height: 300px;
+    width: 100px;
+    background-color: blue;
+    border-radius: 0;
+
+}
+
+.yellow{
+    background-color: yellow;
+    left: 100px;
+}
+
 
 .hips__move{
     animation-name: hips;
@@ -482,6 +512,13 @@ body{
   left: 80px;
   top: 20px;
   transform: scale(0.9);
+}
+.left .hand__section__bottom{
+    transform: rotate(-45deg);
+}
+
+.hide{
+    display: none;
 }
 
 /* .hand .right{
