@@ -1,5 +1,5 @@
 body{
-    margin: 0 5vw;
+    margin: 0 1vw;
     padding: 0;
     width: 100vw;
 }
@@ -655,9 +655,9 @@ li:nth-child(even).human{
 
 @keyframes tank{
     from{
-        left: 100%;
+        left: 50%;
     }
     to{
-        left: -50%;
+        left: -100%;
     }
 }
