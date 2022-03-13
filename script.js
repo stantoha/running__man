@@ -30,11 +30,3 @@ let showHuman=function(){
 };
 setTimeout(showHuman,2000);
 
-
-
-/* 
-const myFunction = () => {
-    showHuman();
-    setTimeout(myFunction, 1000);
-  };
-  setTimeout(myFunction(), 1000); */

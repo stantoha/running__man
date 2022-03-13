@@ -5,7 +5,8 @@ body{
 }
 
 .wrapper{
-    display: block;
+    display: flex;
+    justify-content: space-between;
     margin: 0 auto;
 }
 
@@ -15,19 +16,19 @@ body{
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
-    margin: 0 10vw;
-    height: 150px;
+    margin:50px 0 ;
+   /*  height: 150px; */
 }
 
 
-/* li:nth-child(even).human{
-    margin-top: 50px;
-} */
+li:nth-child(even).human{
+    margin-top: 100px;
+}
 
 .crowd li{
     transform: scale(0.1) rotate(-2deg);
 
-    margin: 20px;
+    margin: 10px;
     height: 120px;
 }
 
@@ -169,14 +170,7 @@ body{
     position: relative;
     z-index: 80;
 }
-.hand__section__top{
-    transform: translateX(-15px);
-}
 
-.hand__section__top{
-    width: 40px;
-    height: 150px;
-}
 
 .leg__section__top{
     display: flex;
@@ -188,9 +182,42 @@ body{
 }
 
 .hand__section__bottom{
+    transform: translateX(-20px);
     width: 40px;
-    height: 160px;
+    height: 145px;
     transform-origin: top;
+}
+
+
+.hand__section__top:first-child {
+    transform: translateX(-20px);
+    width: 45px;
+    height: 140px;
+}
+
+.hand__section__bottom:first-child{
+    width: 45px;
+    height: 150px;
+    transform-origin: top;
+}
+
+.hand__section__top:nth-child(2) {
+    transform: translateX(-20px);
+    width: 40px;
+    height: 135px;
+}
+
+.hand__section__bottom:nth-child(2){
+    width: 40px;
+    height: 145px;
+    transform-origin: top;
+}
+
+.right .hand__section__top,
+.right .hand__section__bottom,
+.right .elbow,
+.right .wirst{
+    transform:translateY(5px) ;
 }
 
 .body{
@@ -206,13 +233,13 @@ body{
 .hips,
 .chest{
     height: 80px;
-    width: 120px;
+    width: 150px;
     margin:0 auto;
    }
 
    .chest{
-    /* background-color: rgba(90, 190, 236, 1); */
-    box-shadow: -30px 0 0 rgba(0,0,0,1);
+    background-color: rgba(90, 190, 236, 1);
+    box-shadow: -30px 0 0 rgba(0,0,0,0.9);
    }
 
 .stomach{
@@ -220,7 +247,7 @@ body{
     width: 60px;
     margin-right: 100px;
     background-color: rgba(227, 236, 90, 1);
-    box-shadow: -30px 0 10px rgba(0,0,0,1);
+    box-shadow: -30px 0 0 10px rgba(0,0,0,0.9);
 }
 
 .hips{
@@ -228,7 +255,7 @@ body{
     width: 110px;
     margin-right: 50px;
     background-color: rgba(0, 0, 0, 0.9);
-   
+    box-shadow: -30px 0 0 0 rgba(0,0,0,0.9);
 }
 
 .right{ 
@@ -236,7 +263,6 @@ body{
     animation-duration: 1.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-   
     z-index: 10;
 }
 
@@ -299,11 +325,10 @@ body{
 
 .foot{
     position: absolute;
-    top: 250px;
+    top: 230px;
     left: 10px;
     width: 100px;
     height: 20px;
-    /* transform: rotate(15deg); */
 }
 .stick,
 .wirst{
@@ -313,7 +338,11 @@ body{
     top:160px ;
     left:0   ;
     transform-origin: top;
-    transform:translate(20px,0) rotate(10deg);
+    transform:translate(20px,0) rotate(-10deg);
+}
+
+.right .wirst{
+    transform: translateY(-10px) rotate(-10deg);
 }
 
 .stick{
@@ -325,6 +354,7 @@ body{
     transform: rotate(-250deg);
 }
 
+.molotovcoctail img,
 .kosa img,
 .AK img,
 .sniperrefile img,
@@ -337,17 +367,12 @@ body{
     top:160px ;
     left:-65px   ; 
 }
-/* 
-.wings img{
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    transform-origin: top;
-    transform: skew(45deg,45deg);
-    top:0 ;
-    left:0;
-} */
 
+
+.molotovcoctail img{
+   top:50px ;
+   left:10px   ;
+}
 .refile img{
    transform: scale(3);
    top:0 ;
@@ -453,13 +478,13 @@ body{
         transform:translateX(-30px) rotate(0);
     }
     25%{
-        transform:translateX(-35px) rotate(-5deg);
+        transform:translateX(-35px) rotate(-10deg);
     }
     50%{
         transform:translateX(-40px) rotate(0);
     }
     75%{
-        transform:translateX(-35px) rotate(5deg);
+        transform:translateX(-35px) rotate(15deg);
     }
     100%{
         transform:translateX(-30px) rotate(0);
@@ -498,7 +523,6 @@ body{
     animation-duration: 20s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-/*     animation-fill-mode: backwards; */
     z-index: 10;
 }
 
@@ -573,7 +597,7 @@ body{
         transform:translateX(-15px) rotate(15deg);
     }
     50%{
-        transform:translateX(-30px) rotate(20deg);
+        transform:translateX(-30px) rotate(25deg);
     }
     75%{
         transform:translateX(-15px) rotate(15deg);
@@ -582,6 +606,8 @@ body{
         transform:translateX(-10px) rotate(0);
     }
 }
+
+
 .leg .left{
     z-index: 10;
 }
@@ -591,13 +617,10 @@ body{
 }
  .hand:first-child {
     position: absolute;
-  left: 65px;
-  top: 20px;
-  transform: scale(0.9);
+  left: 100px;
+  top: 0;
 }
-.left .hand__section__bottom{
-    transform: rotate(-45deg);
-}
+
 
 .hide{
     display: none;
@@ -615,5 +638,24 @@ body{
     }
     to{
       opacity: 1;
+    }
+}
+
+.tank img{
+    position: absolute;
+    transform: scale(0.4);
+    animation-name: tank;
+    animation-timing-function: linear;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    transform-origin: top;
+}
+
+@keyframes tank{
+    from{
+        left: 100%;
+    }
+    to{
+        left: 10%;
     }
 }
