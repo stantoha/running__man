@@ -11,6 +11,7 @@ body{
 }
 
 .crowd{
+    flex: 50%;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -656,6 +657,6 @@ li:nth-child(even).human{
         left: 100%;
     }
     to{
-        left: 10%;
+        left: 5%;
     }
 }
