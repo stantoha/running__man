@@ -6,12 +6,13 @@ body{
 
 .wrapper{
     display: flex;
+    width: 100vw;
     justify-content: space-between;
     margin: 0 auto;
 }
 
 .crowd{
-    flex: 50%;
+    max-width: 50%;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
