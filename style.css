@@ -658,6 +658,6 @@ li:nth-child(even).human{
         left: 100%;
     }
     to{
-        left: 5%;
+        left: -20%;
     }
 }
