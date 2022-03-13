@@ -1,12 +1,12 @@
 body{
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 100vw;
 }
 
 .wrapper{
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: space-between;
     margin: 0 auto;
 }
