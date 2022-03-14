@@ -387,8 +387,8 @@ li:nth-child(even).human{
     }
 
 .bazooka img{
-transform: scale(3) rotate(90deg);
-top:0;
+transform: scale(3) rotate(-90deg);
+top:-200px;
 }
 
 .sniperrefile img{
