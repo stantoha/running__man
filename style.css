@@ -383,11 +383,12 @@ li:nth-child(even).human{
 }
 
  .left__skew{
-        transform: translateX(-15px) rotate(270deg);
+        transform: translateX(-15px) rotate(240deg);
     }
 
 .bazooka img{
 transform: scale(3) rotate(90deg);
+top:0;
 }
 
 .sniperrefile img{
