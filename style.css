@@ -388,9 +388,9 @@ li:nth-child(even).human{
 
 on__shoulder .bazooka{
 position:absolute;
-transform-origin:too;
+transform-origin:top;
 transform: rotate(270deg) scale(3);
-left:0;
+left: -100px;
 top:-100px;
 }
 
