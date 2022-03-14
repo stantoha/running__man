@@ -382,7 +382,10 @@ li:nth-child(even).human{
    left:0   ; 
 }
 
-.bazooka img,
+.bazooka img{
+transform: scale(3);
+}
+
 .sniperrefile img{
     transform: scale(3);
     top:0 ;
