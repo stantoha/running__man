@@ -1,33 +1,41 @@
 body{
-    margin: 0 1vw;
+    margin: 0;
     padding: 0;
-    width: 100vw;
+    width: 100%;
 }
 
 .wrapper{
     display: flex;
-    width: 100%;
-    justify-content: flex-start;
-    align-items:center;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+/*     background:url("img/appocal.jpg") no-repeat 50% 50%;
+ */    margin: 0 auto;
 }
 
 .crowd{
     max-width: 50%;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
-    margin:50px 0 ;
+    margin: 0 auto;
    /*  height: 150px; */
 }
 
 
+/* li:nth-child(even).human{
+    margin-top: 100px;
+} */
+
 .crowd li{
     transform: scale(0.1) rotate(-2deg);
-
+/* 
     margin: 10px;
-    height: 120px;
+    height: 120px; */
 }
 
 .stick,
@@ -218,6 +226,7 @@ body{
     transform:translateY(5px) ;
 }
 
+
 .body{
     position: relative;
     height: 330px;
@@ -352,11 +361,11 @@ body{
     transform: rotate(-250deg);
 }
 
+.rpg img,
 .molotovcoctail img,
 .kosa img,
 .AK img,
 .sniperrefile img,
-.bazooka img,
 .refile img,
 .case img{
     width: 180px;
@@ -367,6 +376,11 @@ body{
     left:-65px   ; 
 }
 
+.rpg img{
+    transform: scale(2.5) rotate(190deg);
+    top: 430px;
+    /* left: 100px; */
+}
 
 .molotovcoctail img{
    top:50px ;
@@ -374,26 +388,14 @@ body{
 }
 .refile img{
    transform: scale(3);
-   top:0;
-   left:0; 
-}
-
- .left__skew{
-        transform: translateX(-15px) rotate(240deg);
-    }
-
-on__shoulder .bazooka{
-position:absolute;
-transform-origin:top;
-transform: rotate(270deg) scale(3);
-left: -100px;
-top:-100px;
+   top:0 ;
+   left:0   ; 
 }
 
 .sniperrefile img{
     transform: scale(3);
-    top:0;
-    left:0;
+    top:0 ;
+    left:0   ;
 }
 
 .AK img{
@@ -443,6 +445,7 @@ top:-100px;
     width: 100px;
     background-color: blue;
     border-radius: 0;
+
 }
 
 .yellow{
@@ -617,6 +620,33 @@ top:-100px;
     }
 }
 
+.rpg__hand__skew{ 
+    transform:rotate(-140deg) 
+    /* animation-name: rpg__hand__skew;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    z-index: 10; */
+}
+
+/* @keyframes rpg__hand__skew{
+    0%{
+        transform:rotate(90deg) ;
+    }
+    25%{
+        transform:rotate(-90deg) ;
+    }
+    50%{
+        transform:rotate(90deg) ;
+    }
+    75%{
+        transform:rotate(-90deg) ;
+    }
+    100%{
+        transform:rotate(90deg) ;
+    }
+} */
 
 .leg .left{
     z-index: 10;
@@ -651,7 +681,11 @@ top:-100px;
     }
 }
 
+
+
 .tank img{
+    display: block;
+    margin: 0 auto;
     position: absolute;
     transform: scale(0.4);
     animation-name: tank;
@@ -663,9 +697,9 @@ top:-100px;
 
 @keyframes tank{
     from{
-        left: 50%;
+        left: 100%;
     }
     to{
-        left: -100%;
+        left: 5%;
     }
 }
