@@ -383,30 +383,8 @@ li:nth-child(even).human{
 }
 
  .left__skew{
-    animation-name: left__skew;
-    animation-duration: 1.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    z-index: 80;
-}
-
-@keyframes left__skew{
-    0%{
         transform:translateX(0) rotate(90deg);
     }
-    25%{
-        transform:translateX(-15px) rotate(90deg);
-    }
-    50%{
-        transform:translateX(0) rotate(90deg);
-    }
-    75%{
-        transform:translateX(-15px) rotate(90deg);
-    }
-    100%{
-        transform:translateX(0) rotate(90deg);
-    }
-}
 
 .bazooka img{
 transform: scale(3) rotate(90deg);
