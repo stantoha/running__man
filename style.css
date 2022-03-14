@@ -388,10 +388,10 @@ li:nth-child(even).human{
 
 on__shoulder .bazooka{
 position:absolute;
-transform-origin:bottom;
+transform-origin:too;
 transform: rotate(270deg) scale(3);
 left:0;
-top:0;
+top:-100px;
 }
 
 .sniperrefile img{
