@@ -382,6 +382,10 @@ li:nth-child(even).human{
    left:0; 
 }
 
+.human:first-child .left .hand__section__bottom{
+transform:rotate(90deg);
+}
+
 .bazooka img{
 transform: scale(3) rotate(90deg);
 }
