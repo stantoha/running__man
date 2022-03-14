@@ -383,7 +383,7 @@ li:nth-child(even).human{
 }
 
  .left__skew{
-        transform: translateX(-15px) rotate(-270deg);
+        transform: translateX(-15px) rotate(270deg);
     }
 
 .bazooka img{
