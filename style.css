@@ -387,7 +387,7 @@ li:nth-child(even).human{
     }
 
 .bazooka img{
-transform: scale(3);
+transform: scale(3) rotate(240deg);
 left:0;
 top:0;
 }
