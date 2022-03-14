@@ -378,18 +378,20 @@ li:nth-child(even).human{
 }
 .refile img{
    transform: scale(3);
-   top:0 ;
-   left:0   ; 
+   top:0;
+   left:0; 
 }
 
 .bazooka img{
-transform: scale(3);
+transform: scale(3) rotate(90deg);
+top:0;
+left:0; 
 }
 
 .sniperrefile img{
     transform: scale(3);
-    top:0 ;
-    left:0   ;
+    top:0;
+    left:0;
 }
 
 .AK img{
