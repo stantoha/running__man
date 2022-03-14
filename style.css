@@ -22,9 +22,6 @@ body{
    /*  height: 150px; */
 }
 
-/*li:nth-child(even).human{
-    margin-top: 100px;
-}*/
 
 .crowd li{
     transform: scale(0.1) rotate(-2deg);
