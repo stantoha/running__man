@@ -382,7 +382,7 @@ li:nth-child(even).human{
    left:0; 
 }
 
-.human:first-child .left .hand__section__bottom .left__skew{
+ .left__skew{
     animation-name: left__skew;
     animation-duration: 1.5s;
     animation-timing-function: linear;
@@ -392,19 +392,19 @@ li:nth-child(even).human{
 
 @keyframes left__skew{
     0%{
-        transform:translateX(0) rotate(0);
+        transform:translateX(0) rotate(90deg);
     }
     25%{
-        transform:translateX(-15px) rotate(-90deg);
+        transform:translateX(-15px) rotate(90deg);
     }
     50%{
-        transform:translateX(0) rotate(0);
+        transform:translateX(0) rotate(90deg);
     }
     75%{
         transform:translateX(-15px) rotate(90deg);
     }
     100%{
-        transform:translateX(0) rotate(0);
+        transform:translateX(0) rotate(90deg);
     }
 }
 
