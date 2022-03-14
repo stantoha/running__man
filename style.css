@@ -360,6 +360,7 @@ li:nth-child(even).human{
 .kosa img,
 .AK img,
 .sniperrefile img,
+.bazooka img,
 .refile img,
 .case img{
     width: 180px;
@@ -381,6 +382,7 @@ li:nth-child(even).human{
    left:0   ; 
 }
 
+.bazooka img,
 .sniperrefile img{
     transform: scale(3);
     top:0 ;
