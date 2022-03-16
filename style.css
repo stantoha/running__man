@@ -8,8 +8,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-/*     background:url("img/appocal.jpg") no-repeat 50% 50%;
- */    background-size: cover;
+  background:url("img/appocal.jpg") no-repeat 50% 50%;
+   background-size: cover;
     margin: 0;
     margin-right: 50%;
     overflow: hidden;
@@ -698,7 +698,7 @@ body{
 
 .fade{
     animation-name: fade;
-    animation-duration: 0.5s;
+    animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
 }
 
