@@ -38,14 +38,14 @@ Width:100%;
 .tank{
      flex:40%;
     align-items: center;
-display: block;
-    margin: 0 auto;
-    position: absolute;
     transform: scale(0.4);
 }
 
 
 .tank img{
+display: block;
+    margin: 0 auto;
+    position: absolute;
     animation-name: tank;
     animation-timing-function: linear;
     animation-duration: 15s;
