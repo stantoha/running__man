@@ -8,14 +8,14 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-  background:url("img/appocal.jpg") no-repeat 50% 50%;
-   background-size: cover;
     margin: 0;
-    margin-right: 50%;
+Width:100%;
+    height: 100vh;
     overflow: hidden;
 }
 
 .crowd{
+    flex:50%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -23,7 +23,6 @@ body{
     list-style: none;
     padding: 0;
     margin: 0;
-    height: 100vh;
 }
 
 
@@ -37,15 +36,16 @@ body{
 }
 
 .tank{
+     flex:40%;
     align-items: center;
+display: block;
+    margin: 0 auto;
+    position: absolute;
+    transform: scale(0.4);
 }
 
 
 .tank img{
-    display: block;
-    margin: 0 auto;
-    position: absolute;
-    transform: scale(0.4);
     animation-name: tank;
     animation-timing-function: linear;
     animation-duration: 15s;
