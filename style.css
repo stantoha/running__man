@@ -9,7 +9,7 @@ body{
     justify-content: space-between;
     align-items: center;
     margin: 0;
-Width:100%;
+max-width:1200px;
     height: 100vh;
     overflow: hidden;
 }
@@ -36,7 +36,6 @@ Width:100%;
 }
 
 .tank{
-     flex:40%;
     align-items: center;
     transform: scale(0.4);
 }
