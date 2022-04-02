@@ -56,11 +56,11 @@ display: block;
 @keyframes tank{
     from{
         top: 50%;
-        left: 50%;
+        left: 25%;
     }
     to{
         top: 30%;
-        left: 0%;
+        left: -50%;
     }
 }
 
