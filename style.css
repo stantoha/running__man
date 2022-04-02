@@ -47,8 +47,8 @@ display: block;
     position: absolute;
     animation-name: tank;
     animation-timing-function: linear;
-    animation-duration: 15s;
-    animation-iteration-count: 1;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
     transform-origin: top;
     top: 400px;
 }
